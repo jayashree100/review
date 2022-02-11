@@ -1,4 +1,4 @@
-read -p "Enter the Start number: " start
+ read -p "Enter the Start number: " start
 read -p "Enter the End number: " end
 for ((i=$start;i<=$end;i++))
 do
@@ -12,11 +12,14 @@ do
         done
         if [ $count -eq 2 ]
         then
-        echo $i
+        array=( $i )
+        echo ${array[@]}
+          
         fi
 done
+ 
     
-
+   
 
 
 
